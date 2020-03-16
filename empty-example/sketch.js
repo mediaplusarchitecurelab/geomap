@@ -54,8 +54,10 @@ function draw() {
 
   		let place = val.properties.place;
 
+  		ellipseMode(CENTER);
   		fill(180,50,50,30)
   		ellipse(longitude, latitude, mag, mag);
+  		
   		textAlign(CENTER);
   		fill(0);
   		textSize(7); 
