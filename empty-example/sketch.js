@@ -49,7 +49,7 @@ function draw() {
 
   	earthquakes.features.forEach((val)=>{
   		let longitude = map(val.geometry.coordinates[0],-180.0,180.0,0.0,width); // 經度 -180 180之間
-  		let latitude = map(val.geometry.coordinates[1],-90.0,90.0,0.0,height); // 緯度 -90 90之間
+  		let latitude = map(val.geometry.coordinates[1],90.0,-90.0,0.0,height); // 緯度 -90 90之間
   		let mag = map(val.properties.mag,3,9.0,5,60); // 緯度 -90 90之間
 
   		let place = val.properties.place;
